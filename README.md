@@ -1,4 +1,9 @@
 # React YouTube Overlay Component
+![Version](https://img.shields.io/github/v/release/sricharankrishnan/react-youtube-overlay-component?sort=semver)
+![Open Issues](https://img.shields.io/github/issues-raw/sricharankrishnan/react-youtube-overlay-component)
+![Closed Issues](https://img.shields.io/github/issues-closed-raw/sricharankrishnan/react-youtube-overlay-component)
+![License](https://img.shields.io/github/license/sricharankrishnan/react-youtube-overlay-component)
+![Maintenance](https://img.shields.io/maintenance/yes/2023)
 <br/>
 
 ### About
