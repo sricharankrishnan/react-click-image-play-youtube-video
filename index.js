@@ -2,7 +2,7 @@
 import React, {useState, useEffect, useRef} from "react";
 
 /* app imports */
-import "./css/style.scss";
+import "./css/style.css";
 import OverlayIframeComponent from "./components/iframe-component.js";
 import closeIcon from "./icons/x-close-icon.svg";
 
@@ -40,10 +40,15 @@ export const ReactYouTubeOverlay = (props) => {
       /* when the closer in the overlay is clicked */
       const onCloseHandler = () => {
         setOverlayShowState(false);
-        props.onClosing();
+
+        if ("onClosing" in props && typeof props.onClosing === "function") {
+          props.onClosing();
+        }
 
         setTimeout(() => {
-          props.onClosed();
+          if ("onClosed" in props && typeof props.onClosed === "function") {
+            props.onClosed();
+          }
         }, 150);
       };
 

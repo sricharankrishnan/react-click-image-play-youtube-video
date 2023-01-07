@@ -7,14 +7,19 @@ export default function IFrameComponent(props) {
 
   useEffect(() => {
     const iframe = iframeElementRef.current;
+    const onLoadHandler = (event) => {
+      if ("onLoaded" in props && typeof props.onLoaded === "function") {
+        props.onLoaded(event);
+      }
+    };
 
-    iframe.addEventListener("load", (event) => {
-      props.onLoaded(event);
-    });
+    iframe.addEventListener("load", onLoadHandler);
 
     return () => {
-      iframe.removeEventListener("unload", props.onLoaded);
-      props.onUnloaded();
+      iframe.removeEventListener("unload", onLoadHandler);
+      if ("onUnloaded" in props && typeof props.onUnloaded === "function") {
+        props.onUnloaded();
+      }
     };
   });
 
