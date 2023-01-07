@@ -1,9 +1,10 @@
 # React YouTube Overlay Component
 <br/>
-<br/>
 
 ### About
 A React component that can be integrated into your application code, to help display and play youtube video embeds inside a popup overlay that takes over your entire screen. The overlay is triggered with a click event that is bound to any valid HTML element (for example a button) and is not just restricted to buttons only.
+
+If you would like to see how this works, a demo project at <a href="https://codesandbox.io/s/react-youtube-overlay-component-demo-pg8kiw">this demo codesandbox</a> is available for you.
 <br/><br/>
 
 ### Built Using
@@ -83,3 +84,12 @@ The following presents the details of the APIs avaialble for this component. Bro
 - (Method) __overlayProps.onIframeLoaded__ (*Optional*): This method is triggered when in the iframe element inside the overlay component has completely loaded. This is triggered upon the 'on load' event listener for the iframe element.
 
 - (Method) __overlayProps.onIframeUnloaded__ (*Optional*): This method is triggered when the 'on unload' event occurs for the iframe element. This is being triggered inside a useEffect hook and is a part of the unmounting process for the iframe element.
+<br/><br/>
+
+### Pull Requests/Contributions and Issues
+If there are any suggestions that you have, perhaps you would like to make a suggestion or contribution do go ahead and create a pull request. If you do face any issues when using this open source project, please feel free to raise an issue. It would also be great if you could demonstrate the issue with a sample project for me to see and correct.
+<br/><br/>
+
+###  Support
+If you like this project, I would really appreciate you placing a star on the github project. This would really help encourage me to become a better developer. Speak to your friends and colleagues about this project too if you can and seek their support.
+Here is wishing you a nice day and happy coding. Cheers!
