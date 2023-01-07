@@ -10,6 +10,7 @@ If you would like to see how this works, a demo project at <a href="https://code
 ### Built Using
 - ReactJS
 - Hooks in React
+- Function Based React Components
 - CSS (Cascading Style Sheets)
 <br/><br/>
 
