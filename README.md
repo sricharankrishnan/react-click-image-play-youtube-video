@@ -9,7 +9,9 @@
 ### About
 A React component that can be integrated into your application code, to help display and play youtube video embeds inside a popup overlay that takes over your entire screen. The overlay is triggered with a click event that is bound to any valid HTML element (for example a button) and is not just restricted to buttons only.
 
-If you would like to see how this works, a demo project at <a href="https://codesandbox.io/s/react-youtube-overlay-component-demo-pg8kiw">this demo codesandbox</a> is available for you.
+If you would like to see how this works, a demo project at <a href="https://codesandbox.io/s/react-youtube-overlay-component-demo-pg8kiw">this demo codesandbox</a> is available for you. 
+
+Are you looking for this plugin that supports projects built with jQuery? <a href="https://github.com/sricharankrishnan/click-image-play-youtube-video">click here</a>.
 <br/><br/>
 
 ### Built Using
