@@ -1,8 +1,5 @@
 # React Click Image Play YouTube Video Component
 ![Version](https://img.shields.io/github/v/release/sricharankrishnan/react-click-image-play-youtube-video?sort=semver)
-![Open Issues](https://img.shields.io/github/issues-raw/sricharankrishnan/react-click-image-play-youtube-video)
-![Closed Issues](https://img.shields.io/github/issues-closed-raw/sricharankrishnan/react-click-image-play-youtube-video)
-![License](https://img.shields.io/github/license/sricharankrishnan/react-click-image-play-youtube-video)
 ![Maintenance](https://img.shields.io/maintenance/yes/2023)
 <br/>
 
