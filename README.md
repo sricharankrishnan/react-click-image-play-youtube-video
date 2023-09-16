@@ -33,6 +33,7 @@ Download the required files in this repository. You will need the entire directo
 interface FCProps {
   embedLink: string;
   embedTitle: string;
+  closeIconSrc: string;
   handleOnOpen?: () => void;
   handleOnClose?: () => void;
   handleOnLoaded?: () => void;
@@ -40,6 +41,7 @@ interface FCProps {
 ```
 - <b>embedLink:</b> (madatory prop) String based only, that determines the link of the youtube video that would be placed in the overlay. A link for this is in the pattern of ```https://www.youtube.com/embed/<youtube-video-id>```.
 - <b>embedTitle:</b> (mandatory prop) String based only, that determines the title text for the iframe element in the plugin.
+- <b>closeIconSrc:</b> (mandatory prop) String based only, that determines the source of the close button icon. Can be both external (example from a CDN) or a static import.
 - <b>handleOnOpen:</b> (optional prop) It is of a function type that accepts zero paramaters and has a void return. This is triggered as soon as the main div element is created and the opening starts.
 - <b>handleOnClose:</b> (optional prop) It is of a function type that accpets zero parameters and has a void return. This is triggered when users click on the close button within the overlay.
 - <b>handleOnLoaded:</b> (optional prop) It is of a function type that accepts zero parameters and has a void return. This is triggered as soon as the iframe element in the overlay has loaded, which is determined by the 'onLoad' event handler.
