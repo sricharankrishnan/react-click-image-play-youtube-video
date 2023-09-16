@@ -8,12 +8,13 @@ import styles from '../style.module.scss';
 
 /* interface */
 interface FCProps {
+  src: string;
   onClickHandler: () => void;
 }
 
 /* component */
 function CloseButton(props: FCProps): JSX.Element {
-  const { onClickHandler } = props;
+  const { onClickHandler, src } = props;
   const { handleOnClose } = useContext(VideoOverlayContext);
 
   function handleOnClick(): void {
@@ -32,7 +33,7 @@ function CloseButton(props: FCProps): JSX.Element {
       <Image
         width={30}
         height={30}
-        src="/assets/icons/x-close-icon.svg"
+        src={src}
         alt="Close"
         title="Close"
       />

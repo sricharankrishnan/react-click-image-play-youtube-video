@@ -10,6 +10,7 @@ import BodyComposer from './components';
 interface FCProps {
   embedLink: string;
   embedTitle: string;
+  closeIconSrc: string;
   handleOnClose?: () => void;
   handleOnOpen?: () => void;
   handleOnLoaded?: () => void;
@@ -19,7 +20,7 @@ interface FCProps {
 /* component */
 function ReactYouTubeOverlay(props: FCProps): JSX.Element | null {
   const {
-    embedLink, embedTitle, handleOnClose, handleOnOpen, handleOnLoaded,
+    embedLink, embedTitle, closeIconSrc, handleOnClose, handleOnOpen, handleOnLoaded,
   } = props;
   const [createOverlay, setCreateOverlay] = useState<boolean>(false);
   const [showState, setShowState] = useState<boolean>(false);
@@ -34,6 +35,7 @@ function ReactYouTubeOverlay(props: FCProps): JSX.Element | null {
   const bodyProps = {
     embedLink,
     embedTitle,
+    closeIconSrc,
     onCloseHandler,
   };
   const ctxProps = {
