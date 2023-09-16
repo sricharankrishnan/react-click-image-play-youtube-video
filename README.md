@@ -1,5 +1,4 @@
 # React Click Image Play YouTube Video Component
-![Version](https://img.shields.io/github/v/release/sricharankrishnan/react-click-image-play-youtube-video?sort=semver)
 ![Maintenance](https://img.shields.io/maintenance/yes/2023)
 <br/>
 
