@@ -1,0 +1,88 @@
+$white: #ffffff;
+$grey: rgba(0, 0, 0, 0.5);
+
+@mixin transition($type, $duration, $style) {
+  transition-property: $type;
+  -moz-transition-property: $type;
+  -webkit-transition-property: $type;
+  -o-transition-property: $type;
+  -ms-transition-property: $type;
+  transition-duration: $duration;
+  -webkit-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-timing-function: $style;
+  -webkit-transition-timing-function: $style;
+  -o-transition-timing-function: $style;
+  -ms-transition-timing-function: $style;
+  -moz-transition-timing-function: $style;
+}
+
+.videoPlayerOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1200;
+	background-color: rgba(0, 0, 0, 0.5);
+  @include transition(all, 0.25s, linear);
+  .closeIcon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 3rem;
+    z-index: 200;
+    padding: 10px;
+    border-radius: 50%;
+    border: 0;
+    background: $white;
+    width: 30px;
+    height: 30px;
+    @include transition(transform, 0.25s, ease-in-out);
+    display: flex;
+    img  {
+      width: 100%;
+      height: auto;
+    }
+  }
+	iframe {
+		max-width: 853px;
+		max-height: 480px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    width: 90%;
+    height: 60vh;
+	}
+}
+.videoPlayerOverlay.hiddenTransform {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+}
+
+@media only screen and (min-width: 768px) {
+  .videoPlayerOverlay {
+    iframe {
+      height: 100%;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .videoPlayerOverlay {
+    .closeIcon:hover {
+      cursor: pointer;
+      background: $grey;
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+    }
+  }
+}
